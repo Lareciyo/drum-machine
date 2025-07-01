@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metronome</title>
+    <title>Metronome Beater</title> 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<h1>Metronome Beater</h1>
+
     <div class="tip">
         (Click anywhere to hear sound...)
     </div>
@@ -20,6 +22,29 @@
         <div class="background-right"></div>
         <div class="arm"></div>
     </div>
+    
+
+    <h2>Current Beat: <span id="beat-count">1</span></h2>
+    <div class="controls">
+        <div>
+            <input type="checkbox" id="kick-drum">
+            <label for="kick-drum">Kick Drum</label>
+            <input type="number" id="kick-drum-timing" min="1" max="4" placeholder="1-4">
+        </div>
+        <div>
+            <input type="checkbox" id="snare-drum">
+            <label for="snare-drum"></label>Snare Drum</label>
+            <input type="number" id="snare-drum-timing" min="1" max="4" placeholder="1-4">
+        </div>
+          <div>
+            <input type="checkbox" id="hi-hat-drum">
+            <label for="hi-hat-drum">Hi-hat Drum</label>
+            <input type="number" id="hi-hate-drum-timing" min="1" max="4" placeholder="1-4">
+        </div>
+    </div>
+
+
+    <button id="stop">Pause</button>
 
     <script src="main.js"></script>
 </body>
